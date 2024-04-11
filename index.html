@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand text-vino" href="#">
+                    <img src="img/icGenbio.webp" alt="Logo" width="60" height="50"
+                        class="d-inline-block align-text-center" />
+                    Genbio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="list-group mt-3">
+            <h5 class="centered-text text-center mb-4">Departamentos</h5>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoAdministracion()">
+                Administración
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoAseguramiento()">
+                Aseguramiento
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoCalidad()">
+                Calidad
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoControlCalidad()">
+                Control de Calidad
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoDocumentacion()">
+                Documentación
+            </button>
+            <button type="button" class="list-group-item list-group-item-action"
+                onclick="gotoMantenimientoIngenierias()">
+                Mantenimiento e Ingenierías
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoOperaciones()">
+                Operaciones
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoProduccion()">
+                Producción
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoContactoTI()">
+                Tecnologías de la Información
+            </button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="gotoContactoValidacion()">
+                Validación
+            </button>
+        </div>
+    </div>
+    <footer class="footer fixed-bottomtext-center">
+        <div class="container">
+            <h6 class="m-0">Derechos reservados Genbio</h6>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function gotoContactoTI() {
+        window.location.href = "contactos/tecnologiasInformacion/contactoTI.html";
+    }
+    function gotoContactoValidacion() {
+        window.location.href = "contactos/validacion/contactoValidacion.html";
+    }
+    function gotoAdministracion() {
+        window.location.href =
+            "contactos/administracion/contactoAdministracion.html";
+    }
+    function gotoAseguramiento() {
+        window.location.href =
+            "contactos/aseguramiento/contactoAseguramiento.html";
+    }
+    function gotoCalidad() {
+        window.location.href = "contactos/calidad/contactoCalidad.html";
+    }
+    function gotoControlCalidad() {
+        window.location.href = "contactos/controlCalidad/contactoControl.html";
+    }
+    function gotoDocumentacion() {
+        window.location.href =
+            "contactos/documentacion/contactoDocumentacion.html";
+    }
+    function gotoMantenimientoIngenierias() {
+        window.location.href =
+            "contactos/mantenimientoIngenierias/contactoMantenimiento.html";
+    }
+    function gotoOperaciones() {
+        window.location.href = "contactos/operaciones/contactoOperaciones.html";
+    }
+    function gotoProduccion() {
+        window.location.href = "contactos/produccion/contactoProduccion.html";
+    }
+</script>
+
+</html>
